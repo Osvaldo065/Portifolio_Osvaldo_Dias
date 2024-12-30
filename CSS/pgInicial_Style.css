@@ -463,7 +463,7 @@ body{
         align-items: center;
         margin: 0;
         flex-direction: column;
-        padding: 15px 4%;
+        margin-left: 10px;
     }
     
     .saudacao{
