@@ -1,241 +1,60 @@
 <!DOCTYPE html>
-<html lang="PT-br">
+<html lang="PT-BR">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portifólio - Osvaldo Dias Junior</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="CSS/pgInicial_Style.css">
-        <script src="JavaScript/Funcao_Menu.JS" defer></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Home - Portifólio</title>
     </head>
     <body>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <header class="head-bar">
-            <nav class="nav-contact">
-                <div class="head-contact">
-                    <ul class="list-nav">
-                        <li class="home">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="Sobre-mim">
-                            <a href="#sobre">Sobre-mim</a>
-                        </li>
-                        <li class="especialidades">
-                            <a href="#especialidades">Especialidades</a>
-                        </li>
-                        <li class="Contato">
-                            <a href="#">Contatos</a>
-                        </li>
-                        <li class="contate-me">
-                            <button type="button" class="btn-contato">
-                                <a
-                                    href="https://www.linkedin.com/in/osvaldo-dias-junior-02b30a266/">Entre
-                                    em contato</a>
-                            </button>
-                        </li>
-                    </ul>
+        <header class="bg-slate-900 flex h-56 ">
+            <nav class="p-4 px-8 my-4">
+                <h1 class="font-sans text-white text-4xl font-bold ">
+                    Osvaldo Dias Junior
+                </h1>
+                <p class="text-white my-4">Analista de Dados | Python & SQL |
+                    Transformando dados em decisões
+                </p>
+                <div class=" flex gap-4">
+                    <button
+                        class="bg-green-600 rounded-md w-32 h-10">
+                        <a href="#"
+                            class="inline-flex items-center justify-center w-32 h-10 
+                            bg-green-600 text-white rounded-md 
+                            transition duration-150 ease-in-out 
+                            hover:bg-gray-200 hover:text-black">Ver Projetos</a>
+                    </button>
+                    <button
+                        class="bg-gray-200 rounded-md w-32 h-10">
+                        <a href="#"
+                            class="inline-flex items-center justify-center w-32 h-10 
+                            bg-gray-200 text-black rounded-md 
+                            transition duration-150 ease-in-out 
+                            hover:bg-green-600 hover:text-white">Contato</a>
+                    </button>
                 </div>
             </nav>
-            <div class="btn-abrirMenu" id="btn-menu">
-                <i class="bi bi-list"></i>
+        </header>
+        <section class="bg-gray-200 w-auto p-8">
+            <p class="font-bold text-2xl text-center mb-6">Sobre mim</p>
+            <div class="flex flex-row justify-center items-center gap-x-8 max-w-4/l mx-auto">
+                <div>
+                    <img src="IMG/perfil.png" alt="Foto_Perfil"
+                        class="rounded-md flex">
+                </div>
+                <div>
+                    <p class>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                        Vivamus tincidunt purus vitae urna vehicula, nec
+                        bibendum
+                        lorem vestibulum. Integer suscipit varius justo, sed
+                        fringilla lorem lacinia vel. Ut id risus in risus
+                        malesuada
+                        rhoncus. Donec nec nulla non leo sollicitudin volutpat.
+                        Morbi porttitor, magna ac tristique aliquet, odio nulla
+                        ultrices elit, eget viverra neque est ut sapien.</p>
+                </div>
             </div>
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
-                <nav class="nav-mobile">
-                    <ul class="list-nav-mobile">
-                        <li class="home-mobile">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="Sobre-mim-mobile">
-                            <a href="#sobre">Sobre-mim</a>
-                        </li>
-                        <li class="especialidades-mobile">
-                            <a href="#especialidades">Especialidades</a>
-                        </li>
-                        <li class="Contato-mobile">
-                            <a href="#">Contatos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="overMenu-mobile" id="overMenu-mobile"></div>
-            </header>
-            <main>
-                <div class="conteiner-flex" id="home">
-                    <div class="conteiner-figure">
-                        <figure class="figure">
-                            <img src="Img/foto perfil dias.svg"
-                                class="figure-img img-fluid rounded"
-                                alt="Foto de osvaldo">
-                        </figure>
-                    </div>
-                    <div class="info-class ">
-                        <p class="saudacao">Olá, meu nome é</p>
-                        <h2 class="name">Osvaldo Dias Junior</h2>
-                        <p class="apresentacao">Sou Desenvolvedor
-                            Back-end, venha
-                            Conhecer os meus projetos e minha trajetória
-                            profissional.</p>
-                    </div>
-                </div>
-                <section class="secao-sobre" id="sobre">
-                    <h1 class="title-sobre">Sobre mim</h1>
-                    <p class="descricao-sobre">
-                        Meu nome é Osvaldo Dias, sou estudante de
-                        Análise e
-                        Desenvolvimento de Sistemas na Fatec e
-                        trabalho como Desenvolvedor Trainee na redeFlex
-                        Comércio e
-                        Serviços de Telefonia, em Cuiabá-MT.
-                        Sou dedicado e sempre busco aprender e crescer
-                        com as
-                        oportunidades que tenho.
-                        Tenho experiência com Python, MySQL, PostgreSQL,
-                        Power BI,
-                        HTML,
-                        CSS e atualmente estou estudando C#.
-                    </p>
-                    <div class="icons-container" id="especialidades">
-                        <a
-                            href="https://www.linkedin.com/in/osvaldo-dias-junior-02b30a266/"
-                            target="_blank" rel="noopener noreferrer">
-                            <img class="icon-linked"
-                                src="Img/ícone-contato.png"
-                                alt="icone - linkedin">
-                        </a>
-                        <a href="https://github.com/Osvaldo065"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <img class="icon-git"
-                                src="Img/icoone-github.png"
-                                alt="icone-GitHub">
-                        </a>
-                    </div>
-                </section>
-                <section class="sec-especialidades">
-                    <h1 class="title-espc">MINHAS <span>
-                            ESPECIALIDADES</span></h1>
-                    <div class="box-especialidade">
-                        <ul class="espc-list">
-                            <li class="Back-end">
-                                <i class="bi bi-code-square"></i>
-                                <h3 class="espc-01">Back-end</h3>
-                                <p class="desc-espc-01">Trabalhei com back-end
-                                    em projetinhos pessoais, explorando Python,
-                                    Java, C e C#. Criei pequenos jogos e usei
-                                    lógica de programação em vários exercícios.
-                                </li>
-                                <li class="MySQL">
-                                    <i class="bi bi-bar-chart-fill"></i>
-                                    <h3 class="espc-02">PowerBI</h3>
-                                    <p class="desc-espc-02">Atualmente,
-                                        desenvolvo
-                                        dashboards para minha função na empresa
-                                        redeFlex. Já criei indicadores para o
-                                        setor
-                                        de Desenvolvimento, como métricas de
-                                        efetividade em chamados atendidos,
-                                        controle
-                                        de férias dos colaboradores e um
-                                        dashboard
-                                        para gestão de hardwares.
-                                    </p>
-                                </li>
-                                <li class="Banco-Dados">
-                                    <i class="bi bi-database-fill"></i>
-                                    <h3 class="espc-03">My SQL</h3>
-                                    <p class="desc-espc-03">Trabalhei em
-                                        projetos
-                                        pessoais desenvolvendo bancos de dados e
-                                        realizando consultas com MySQL e
-                                        MariaDB.
-                                        Atualmente, na minha função na empresa
-                                        redeFlex, utilizo o MySQL Server.
-
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <div class="experiencias-flex">
-                        <h1 class="title-exp">MINHAS <span>
-                                EXPERIÊNCIAS</span></h1>
-                        <div class="box-experiencias">
-                            <ul class="list-exps">
-                                <li class="expUm">
-                                    <img class="img-expUm"
-                                        src="Img/Redeflex-lg.png"
-                                        alt="logo redeFlex">
-                                    <h3 class="exp-01">Analista de
-                                        Desenvolvimento</h3>
-                                    <h6 class="date-exp-01">Inicío:
-                                        16/11/2024 -
-                                        Conclusão: até o momento </h6>
-                                    <p class="desc-exp-01">
-                                        Atuo na triagem e classificação de
-                                        chamados para o setor de
-                                        Desenvolvimento, atendo chamados
-                                        simples, realizo consultas no Banco de
-                                        Dados e verifico a funcionalidade dos
-                                        sistemas. Também analiso indicadores de
-                                        desempenho e identifico problemas.
-                                    </p>
-                                </li>
-                                <li class="expDois">
-                                    <img class="img-expDois"
-                                        src="Img/Redeflex-lg.png"
-                                        alt="logo redeFlex">
-                                    <h3 class="exp-02">Analista de
-                                        Governança de TI</h3>
-                                    <h6 class="date-exp-02">Inicío:
-                                        16/11/2023 -
-                                        Conclusão: 16/11/2024 </h6>
-                                    <p class="desc-espc-02">Atuei no
-                                        gerenciamento de incidentes, análise de
-                                        dados, controle de periféricos, criação
-                                        de materiais técnicos e normativos, além
-                                        de acompanhar indicadores e contratar
-                                        serviços de TI, otimizando processos e
-                                        resultados.
-                                    </p>
-                                </li>
-                                <li class="expTres">
-                                    <img class="img-expTres"
-                                        src="Img/toledo-brasil-logotipo.svg"
-                                        alt="logo Toledo do Brasil">
-                                    <h3 class="exp-03">Auxiliar
-                                        Administrativo I</h3>
-                                    <h6 class="date-exp-02">Inicío:
-                                        15/07/2023 -
-                                        Conclusão: 13/11/2023 </h6>
-                                    <p class="desc-exp-03">Realizei lançamento
-                                        de horas e despesas, organização de
-                                        relatórios, emissão de notas fiscais e
-                                        demonstrativos de cálculo. Atuei no
-                                        atendimento ao cliente, cobrança de
-                                        serviços de manutenção e faturamento de
-                                        oficina interna e serviços externos.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </main>
-                    <footer class="final-port">
-                        <p class="text-rodape">Criado por: Osvaldo Dias
-                            Junior -
-                            Todos os direitos reservados @2024</p>
-                    </footer>
-                </body>
-            </html>
+        </section>
+    </body>
+</html>
